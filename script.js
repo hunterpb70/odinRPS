@@ -60,11 +60,15 @@ function determineWinner(userChoice, computerChoice) {
 }
 
 function playGame() {
-    let userChoice = getUserChoice('paper');
+    let userChoice = getUserChoice(prompt('Rock Paper Scissors'));
     let computerChoice = getComputerChoice();
     console.log('You played:' + userChoice);
     console.log('The computer played: ' + computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
 }
 
+console.log(playGame());
+console.log(playGame());
+console.log(playGame());
+console.log(playGame());
 console.log(playGame());
